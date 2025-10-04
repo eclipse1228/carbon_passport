@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Passport - 여행 정보 입력</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="input-styles.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-polylinedecorator@1.6.0/dist/leaflet.polylineDecorator.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌿 GREEN PASSPORT</h1>
+            <p>친환경 철도 여행 기록</p>
+        </div>
+
+        <div class="content">
+            <div class="input-section">
+                <!-- Photo Section -->
+                <div class="section-card">
+                    <h2>📸 여행자 정보</h2>
+                    <div class="photo-upload">
+                        <div class="photo-preview">
+                            <img id="userPhoto" src="" alt="여행자 사진" style="display:none;">
+                            <div class="photo-placeholder" id="photoPlaceholder">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12Z" fill="#999"/>
+                                    <path d="M12 14C7.59 14 4 15.79 4 18V20H20V18C20 15.79 16.41 14 12 14Z" fill="#999"/>
+                                </svg>
+                                <p>사진을 선택하세요</p>
+                            </div>
+                        </div>
+                        <input type="file" id="photoInput" accept="image/*" style="display:none;">
+                        <button class="btn btn-primary" onclick="document.getElementById('photoInput').click()">
+                            사진 선택
+                        </button>
+                    </div>
+                    <div class="info-inputs">
+                        <div class="form-group">
+                            <label>이름</label>
+                            <input type="text" id="travelerName" placeholder="여행자 이름 입력">
+                        </div>
+                        <div class="form-group">
+                            <label>여행 날짜</label>
+                            <input type="date" id="travelDate">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Route Selection -->
+                <div class="section-card">
+                    <h2>🚂 여행 경로 선택</h2>
+                    <div class="route-inputs">
+                        <div class="route-selector">
+                            <div class="form-group">
+                                <label>출발역</label>
+                                <select id="startStation">
+                                    <option value="">선택하세요</option>
+                                    <option value="seoul">서울역</option>
+                                    <option value="busan">부산역</option>
+                                    <option value="dongdaegu">동대구역</option>
+                                    <option value="gwangju">광주역</option>
+                                    <option value="gangneung">강릉역</option>
+                                </select>
+                            </div>
+                            <div class="arrow">→</div>
+                            <div class="form-group">
+                                <label>도착역</label>
+                                <select id="endStation">
+                                    <option value="">선택하세요</option>
+                                    <option value="seoul">서울역</option>
+                                    <option value="busan">부산역</option>
+                                    <option value="dongdaegu">동대구역</option>
+                                    <option value="gwangju">광주역</option>
+                                    <option value="gangneung">강릉역</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-add" onclick="addRoute()">경로 추가</button>
+                        </div>
+                    </div>
+
+                    <!-- Selected Routes List -->
+                    <div class="routes-list">
+                        <h3>선택된 경로</h3>
+                        <div id="routesList"></div>
+                        <div class="route-summary">
+                            <div class="summary-item">
+                                <span>총 거리:</span>
+                                <strong id="totalDistance">0 km</strong>
+                            </div>
+                            <div class="summary-item highlight">
+                                <span>CO₂ 절감량:</span>
+                                <strong id="totalCO2">0 kg</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Preview -->
+            <div class="map-preview">
+                <h2>경로 미리보기</h2>
+                <div id="map"></div>
+            </div>
+        </div>
+
+        <!-- Generate Button -->
+        <div class="action-section">
+            <button class="btn btn-generate" onclick="generatePassport()" disabled id="generateBtn">
+                🎫 여권 생성하기
+            </button>
+            <p class="info-text">사진과 최소 1개의 경로를 선택해주세요</p>
+        </div>
+    </div>
+
+    <script src="input-script.js"></script>
+</body>
+</html>

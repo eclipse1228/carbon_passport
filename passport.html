@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Passport - 탄소 여권</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="passport-styles.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-polylinedecorator@1.6.0/dist/leaflet.polylineDecorator.js"></script>
+</head>
+<body>
+    <div class="controls">
+        <button class="btn-back" onclick="window.location.href='input.html'">← 돌아가기</button>
+        <button class="btn-print" onclick="window.print()">🖨️ 인쇄하기</button>
+    </div>
+
+    <div class="passport-container">
+        <div class="passport-header">
+            <h1>GREEN PASSPORT</h1>
+            <!-- <p class="subtitle">탄소 절감 여권 - Carbon Reduction Passport</p> -->
+        </div>
+
+        <div class="passport-content">
+            <!-- Top Section: Photo and Map -->
+            <div class="top-section">
+                <!-- Photo Section -->
+                <div class="photo-section">
+                    <div class="photo-frame">
+                        <img id="passportPhoto" src="" alt="여행자 사진">
+                    </div>
+                    <div class="traveler-info">
+                        <div class="info-item">
+                            <label>Name</label>
+                            <div class="info-value" id="passportName"></div>
+                        </div>
+                        <div class="info-item">
+                            <label>Date</label>
+                            <div class="info-value" id="passportDate"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Section -->
+                <div class="map-section">
+                    <div id="passportMap"></div>
+                </div>
+            </div>
+
+            <!-- Transport Comparison Cards -->
+            <div class="transport-comparison">
+                <h3></h3>
+                <div class="transport-cards">
+                    <div class="transport-card train">
+                        <div class="transport-icon">🚂</div>
+                        <div class="transport-name">기차</div>
+                        <div class="transport-co2" id="trainCO2">0 kg CO₂</div>
+                    </div>
+                    <div class="transport-card car">
+                        <div class="transport-icon">🚗</div>
+                        <div class="transport-name">자동차</div>
+                        <div class="transport-co2" id="carCO2">0 kg CO₂</div>
+                    </div>
+                    <div class="transport-card bus">
+                        <div class="transport-icon">🚌</div>
+                        <div class="transport-name">버스</div>
+                        <div class="transport-co2" id="busCO2">0 kg CO₂</div>
+                    </div>
+                    <div class="transport-card plane">
+                        <div class="transport-icon">✈️</div>
+                        <div class="transport-name">비행기</div>
+                        <div class="transport-co2" id="planeCO2">0 kg CO₂</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Route Details Table -->
+            <div class="emissions-section">
+                <table class="emissions-table">
+                    <thead>
+                        <tr>
+                            <th>구간</th>
+                            <th>거리</th>
+                            <th>기차 CO₂</th>
+                            <th>자동차 CO₂</th>
+                            <th>절감량</th>
+                        </tr>
+                    </thead>
+                    <tbody id="passportRouteList">
+                    </tbody>
+                    <tfoot>
+                        <tr class="total-row">
+                            <td><strong>합계</strong></td>
+                            <td><strong id="totalDistance">0 km</strong></td>
+                            <td><strong id="totalTrainCO2">0 kg</strong></td>
+                            <td><strong id="totalCarCO2">0 kg</strong></td>
+                            <td class="saved"><strong id="totalSaved">0 kg</strong></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <!-- Footer with Certification -->
+            <div class="passport-footer">
+                <div class="certification">
+                    <div class="stamp-container">
+                        <div class="stamp">
+                            <div class="stamp-inner">
+                                <p>GREEN</p>
+                                <p>CERTIFIED</p>
+                                <p class="stamp-year">2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-text">
+                        <p class="cert-title">친환경 여행 인증</p>
+                        <p>이 여권은 대한민국 철도를 이용한</p>
+                        <p>친환경 여행과 탄소 절감 노력을 인증합니다.</p>
+                        <p class="cert-date" id="certDate"></p>
+                    </div>
+                </div>
+                <div class="barcode">
+                    <svg id="barcode"></svg>
+                    <p class="barcode-number" id="barcodeNumber"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="passport-script.js"></script>
+</body>
+</html>
