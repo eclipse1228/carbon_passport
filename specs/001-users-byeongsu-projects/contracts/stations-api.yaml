@@ -1,0 +1,145 @@
+openapi: 3.0.0
+info:
+  title: Stations API
+  version: 1.0.0
+  description: API for retrieving Korean railway station data
+
+paths:
+  /api/stations:
+    get:
+      summary: Get all available stations
+      operationId: getStations
+      parameters:
+        - name: locale
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [ko, en, ja, zh]
+            default: ko
+          description: Language for station names
+      responses:
+        '200':
+          description: List of stations retrieved successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  stations:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Station'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+
+  /api/stations/distance:
+    post:
+      summary: Calculate distance between stations
+      operationId: calculateDistance
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - from
+                - to
+              properties:
+                from:
+                  type: string
+                  enum: [seoul, busan, dongdaegu, gwangju, gangneung]
+                to:
+                  type: string
+                  enum: [seoul, busan, dongdaegu, gwangju, gangneung]
+      responses:
+        '200':
+          description: Distance calculated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DistanceResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+
+components:
+  schemas:
+    Station:
+      type: object
+      properties:
+        code:
+          type: string
+          example: seoul
+        name:
+          type: string
+          example: 서울역
+          description: Localized station name based on locale parameter
+        nameKo:
+          type: string
+          example: 서울역
+        nameEn:
+          type: string
+          example: Seoul Station
+        nameJa:
+          type: string
+          example: ソウル駅
+        nameZh:
+          type: string
+          example: 首尔站
+        latitude:
+          type: number
+          example: 37.555946
+        longitude:
+          type: number
+          example: 126.972317
+        isActive:
+          type: boolean
+          example: true
+
+    DistanceResponse:
+      type: object
+      properties:
+        from:
+          $ref: '#/components/schemas/Station'
+        to:
+          $ref: '#/components/schemas/Station'
+        distance:
+          type: integer
+          description: Distance in kilometers
+        emissions:
+          type: object
+          properties:
+            train:
+              type: number
+              description: CO2 emissions by train (kg)
+            car:
+              type: number
+              description: CO2 emissions by car (kg)
+            bus:
+              type: number
+              description: CO2 emissions by bus (kg)
+            airplane:
+              type: number
+              description: CO2 emissions by airplane (kg)
+            saved:
+              type: number
+              description: CO2 saved compared to car (kg)
+
+    Error:
+      type: object
+      properties:
+        error:
+          type: string
+        message:
+          type: string
+        statusCode:
+          type: integer
+
+  responses:
+    BadRequest:
+      description: Invalid request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'

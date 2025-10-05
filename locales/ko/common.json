@@ -1,0 +1,153 @@
+{
+  "app": {
+    "title": "탄소 여권",
+    "description": "KORAIL과 함께하는 친환경 여행",
+    "copyright": "© 2024 KORAIL"
+  },
+  "navigation": {
+    "home": "홈",
+    "create": "여권 만들기",
+    "about": "소개",
+    "language": "언어"
+  },
+  "passport": {
+    "title": "탄소 여권",
+    "subtitle": "기차 여행으로 지구를 지켜요",
+    "create": "여권 만들기",
+    "share": "공유하기",
+    "download": "다운로드",
+    "travelerName": "여행자 이름",
+    "country": "국가",
+    "travelDate": "여행 날짜",
+    "photo": "사진",
+    "uploadPhoto": "사진 업로드",
+    "photoRequired": "사진을 업로드해주세요",
+    "routes": "여행 경로"
+  },
+  "route": {
+    "add": "경로 추가",
+    "remove": "삭제",
+    "from": "출발역",
+    "to": "도착역",
+    "distance": "거리",
+    "co2Saved": "절감한 CO2",
+    "selectStation": "역 선택",
+    "totalDistance": "총 거리",
+    "totalCO2Saved": "총 CO2 절감량"
+  },
+  "emissions": {
+    "title": "교통수단별 CO2 배출량",
+    "train": "기차",
+    "car": "자동차",
+    "bus": "버스",
+    "airplane": "비행기",
+    "saved": "절감량",
+    "comparison": "배출량 비교",
+    "unit": {
+      "kg": "kg",
+      "g": "g",
+      "km": "km"
+    }
+  },
+  "survey": {
+    "title": "여행 설문조사",
+    "subtitle": "더 나은 서비스를 위해 의견을 들려주세요",
+    "submit": "제출",
+    "skip": "건너뛰기",
+    "required": "필수",
+    "optional": "선택",
+    "completed": "설문 완료",
+    "questions": {
+      "travelPurpose": {
+        "label": "여행 목적",
+        "options": {
+          "leisure": "여가/관광",
+          "business": "업무/출장",
+          "visiting": "친지 방문",
+          "other": "기타"
+        }
+      },
+      "travelFrequency": {
+        "label": "기차 여행 빈도",
+        "options": {
+          "daily": "매일",
+          "weekly": "주 1회 이상",
+          "monthly": "월 1회 이상",
+          "yearly": "연 수회",
+          "rarely": "거의 없음"
+        }
+      },
+      "environmentalImportance": {
+        "label": "환경 보호의 중요성 (1-5)",
+        "description": "1: 전혀 중요하지 않음, 5: 매우 중요함"
+      },
+      "wouldRecommend": {
+        "label": "기차 여행을 추천하시겠습니까?",
+        "options": {
+          "yes": "예",
+          "no": "아니오"
+        }
+      },
+      "improvementSuggestions": {
+        "label": "개선 제안",
+        "placeholder": "서비스 개선을 위한 제안을 입력해주세요"
+      },
+      "additionalComments": {
+        "label": "추가 의견",
+        "placeholder": "추가 의견이 있으시면 입력해주세요"
+      }
+    }
+  },
+  "share": {
+    "title": "여권 공유",
+    "subtitle": "링크를 통해 여권을 공유하세요",
+    "generateLink": "링크 생성",
+    "copyLink": "링크 복사",
+    "copied": "복사됨!",
+    "expiresIn": "{days}일 후 만료",
+    "expired": "만료된 링크",
+    "qrCode": "QR 코드"
+  },
+  "countries": {
+    "KR": "대한민국",
+    "US": "미국",
+    "JP": "일본",
+    "CN": "중국"
+  },
+  "validation": {
+    "required": "필수 입력 항목입니다",
+    "invalidName": "올바른 이름을 입력해주세요",
+    "invalidCountry": "국가를 선택해주세요",
+    "invalidDate": "올바른 날짜를 입력해주세요",
+    "invalidFile": "올바른 파일 형식이 아닙니다",
+    "fileTooLarge": "파일 크기는 5MB 이하여야 합니다",
+    "minRoutes": "최소 1개 이상의 경로를 추가해주세요",
+    "sameStation": "출발역과 도착역이 같을 수 없습니다"
+  },
+  "buttons": {
+    "next": "다음",
+    "previous": "이전",
+    "submit": "제출",
+    "cancel": "취소",
+    "save": "저장",
+    "delete": "삭제",
+    "edit": "수정",
+    "close": "닫기",
+    "confirm": "확인",
+    "back": "뒤로"
+  },
+  "messages": {
+    "loading": "로딩 중...",
+    "saving": "저장 중...",
+    "success": "성공!",
+    "error": "오류가 발생했습니다",
+    "tryAgain": "다시 시도해주세요",
+    "noData": "데이터가 없습니다"
+  },
+  "footer": {
+    "about": "소개",
+    "privacy": "개인정보처리방침",
+    "terms": "이용약관",
+    "contact": "문의하기"
+  }
+}

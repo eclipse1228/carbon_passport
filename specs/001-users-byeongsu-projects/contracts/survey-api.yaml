@@ -1,0 +1,166 @@
+openapi: 3.0.0
+info:
+  title: Survey API
+  version: 1.0.0
+  description: API for ESG awareness survey
+
+paths:
+  /api/survey:
+    post:
+      summary: Submit survey responses
+      operationId: submitSurvey
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - passportId
+                - responses
+              properties:
+                passportId:
+                  type: string
+                  format: uuid
+                responses:
+                  type: object
+                  required:
+                    - q1_transport_awareness
+                    - q2_carbon_goals
+                    - q3_diesel_replacement
+                    - q4_social_support
+                    - q5_recycling_energy
+                    - q6_transparency
+                  properties:
+                    q1_transport_awareness:
+                      type: string
+                      enum: [knew, new, unsure]
+                      description: Awareness of transport CO2 differences
+                    q2_carbon_goals:
+                      type: integer
+                      minimum: 1
+                      maximum: 5
+                      description: Agreement with 2050 carbon neutral goals
+                    q3_diesel_replacement:
+                      type: string
+                      enum: [knew, new, unsure]
+                      description: Knowledge of diesel train replacement
+                    q4_social_support:
+                      type: string
+                      enum: [knew, new, unsure]
+                      description: Awareness of social support programs
+                    q5_recycling_energy:
+                      type: integer
+                      minimum: 1
+                      maximum: 5
+                      description: Impact of recycling/renewable energy
+                    q6_transparency:
+                      type: integer
+                      minimum: 1
+                      maximum: 5
+                      description: Trust impact of ESG transparency
+      responses:
+        '201':
+          description: Survey submitted successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SurveyResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '404':
+          description: Passport not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '409':
+          description: Survey already completed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /api/survey/{passportId}:
+    get:
+      summary: Get survey responses for a passport
+      operationId: getSurveyResponses
+      parameters:
+        - name: passportId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Survey responses retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SurveyResponse'
+        '404':
+          description: Survey not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+components:
+  schemas:
+    SurveyResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        passportId:
+          type: string
+          format: uuid
+        responses:
+          type: object
+          properties:
+            q1_transport_awareness:
+              type: string
+              enum: [knew, new, unsure]
+            q2_carbon_goals:
+              type: integer
+              minimum: 1
+              maximum: 5
+            q3_diesel_replacement:
+              type: string
+              enum: [knew, new, unsure]
+            q4_social_support:
+              type: string
+              enum: [knew, new, unsure]
+            q5_recycling_energy:
+              type: integer
+              minimum: 1
+              maximum: 5
+            q6_transparency:
+              type: integer
+              minimum: 1
+              maximum: 5
+        completed:
+          type: boolean
+        completedAt:
+          type: string
+          format: date-time
+
+    Error:
+      type: object
+      properties:
+        error:
+          type: string
+        message:
+          type: string
+        statusCode:
+          type: integer
+
+  responses:
+    BadRequest:
+      description: Invalid request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'

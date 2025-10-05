@@ -1,0 +1,153 @@
+{
+  "app": {
+    "title": "カーボンパスポート",
+    "description": "KORAILとエコフレンドリーな旅",
+    "copyright": "© 2024 KORAIL"
+  },
+  "navigation": {
+    "home": "ホーム",
+    "create": "パスポート作成",
+    "about": "概要",
+    "language": "言語"
+  },
+  "passport": {
+    "title": "カーボンパスポート",
+    "subtitle": "鉄道旅行で地球を守ろう",
+    "create": "パスポート作成",
+    "share": "共有",
+    "download": "ダウンロード",
+    "travelerName": "旅行者名",
+    "country": "国",
+    "travelDate": "旅行日",
+    "photo": "写真",
+    "uploadPhoto": "写真をアップロード",
+    "photoRequired": "写真をアップロードしてください",
+    "routes": "旅行ルート"
+  },
+  "route": {
+    "add": "ルート追加",
+    "remove": "削除",
+    "from": "出発駅",
+    "to": "到着駅",
+    "distance": "距離",
+    "co2Saved": "CO2削減量",
+    "selectStation": "駅を選択",
+    "totalDistance": "総距離",
+    "totalCO2Saved": "総CO2削減量"
+  },
+  "emissions": {
+    "title": "交通手段別CO2排出量",
+    "train": "電車",
+    "car": "自動車",
+    "bus": "バス",
+    "airplane": "飛行機",
+    "saved": "削減量",
+    "comparison": "排出量比較",
+    "unit": {
+      "kg": "kg",
+      "g": "g",
+      "km": "km"
+    }
+  },
+  "survey": {
+    "title": "旅行アンケート",
+    "subtitle": "より良いサービスのためにご意見をお聞かせください",
+    "submit": "送信",
+    "skip": "スキップ",
+    "required": "必須",
+    "optional": "任意",
+    "completed": "アンケート完了",
+    "questions": {
+      "travelPurpose": {
+        "label": "旅行目的",
+        "options": {
+          "leisure": "レジャー/観光",
+          "business": "ビジネス",
+          "visiting": "親族訪問",
+          "other": "その他"
+        }
+      },
+      "travelFrequency": {
+        "label": "鉄道旅行の頻度",
+        "options": {
+          "daily": "毎日",
+          "weekly": "週1回以上",
+          "monthly": "月1回以上",
+          "yearly": "年数回",
+          "rarely": "ほとんどない"
+        }
+      },
+      "environmentalImportance": {
+        "label": "環境保護の重要性 (1-5)",
+        "description": "1: 重要でない, 5: 非常に重要"
+      },
+      "wouldRecommend": {
+        "label": "鉄道旅行をお勧めしますか？",
+        "options": {
+          "yes": "はい",
+          "no": "いいえ"
+        }
+      },
+      "improvementSuggestions": {
+        "label": "改善提案",
+        "placeholder": "サービス改善のご提案をお聞かせください"
+      },
+      "additionalComments": {
+        "label": "追加コメント",
+        "placeholder": "追加のご意見がございましたらお聞かせください"
+      }
+    }
+  },
+  "share": {
+    "title": "パスポート共有",
+    "subtitle": "リンクでパスポートを共有",
+    "generateLink": "リンク生成",
+    "copyLink": "リンクをコピー",
+    "copied": "コピーしました！",
+    "expiresIn": "{days}日後に期限切れ",
+    "expired": "期限切れのリンク",
+    "qrCode": "QRコード"
+  },
+  "countries": {
+    "KR": "韓国",
+    "US": "アメリカ",
+    "JP": "日本",
+    "CN": "中国"
+  },
+  "validation": {
+    "required": "必須項目です",
+    "invalidName": "有効な名前を入力してください",
+    "invalidCountry": "国を選択してください",
+    "invalidDate": "有効な日付を入力してください",
+    "invalidFile": "無効なファイル形式",
+    "fileTooLarge": "ファイルサイズは5MB以下である必要があります",
+    "minRoutes": "少なくとも1つのルートを追加してください",
+    "sameStation": "出発駅と到着駅は同じにできません"
+  },
+  "buttons": {
+    "next": "次へ",
+    "previous": "前へ",
+    "submit": "送信",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "delete": "削除",
+    "edit": "編集",
+    "close": "閉じる",
+    "confirm": "確認",
+    "back": "戻る"
+  },
+  "messages": {
+    "loading": "読み込み中...",
+    "saving": "保存中...",
+    "success": "成功！",
+    "error": "エラーが発生しました",
+    "tryAgain": "もう一度お試しください",
+    "noData": "データがありません"
+  },
+  "footer": {
+    "about": "概要",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "contact": "お問い合わせ"
+  }
+}
