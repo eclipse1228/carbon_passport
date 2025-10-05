@@ -1,0 +1,242 @@
+openapi: 3.0.0
+info:
+  title: Carbon Passport API
+  version: 1.0.0
+  description: API for managing carbon passports
+
+paths:
+  /api/passport:
+    post:
+      summary: Create new passport
+      operationId: createPassport
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - travelerName
+                - country
+                - travelDate
+              properties:
+                travelerName:
+                  type: string
+                  minLength: 1
+                  maxLength: 100
+                country:
+                  type: string
+                  enum: [KR, US, JP, CN]
+                photoUrl:
+                  type: string
+                  format: uri
+                travelDate:
+                  type: string
+                  format: date
+      responses:
+        '201':
+          description: Passport created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PassportResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+
+  /api/passport/{id}:
+    get:
+      summary: Get passport by ID
+      operationId: getPassport
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Passport retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PassportWithRoutes'
+        '404':
+          $ref: '#/components/responses/NotFound'
+
+  /api/passport/share/{shareHash}:
+    get:
+      summary: Get shared passport by hash
+      operationId: getSharedPassport
+      parameters:
+        - name: shareHash
+          in: path
+          required: true
+          schema:
+            type: string
+            pattern: '^[a-zA-Z0-9]{12}$'
+      responses:
+        '200':
+          description: Shared passport retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PassportWithRoutes'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '410':
+          description: Share link expired
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /api/passport/{id}/routes:
+    post:
+      summary: Add routes to passport
+      operationId: addRoutes
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - routes
+              properties:
+                routes:
+                  type: array
+                  minItems: 1
+                  items:
+                    type: object
+                    required:
+                      - startStation
+                      - endStation
+                    properties:
+                      startStation:
+                        type: string
+                        enum: [seoul, busan, dongdaegu, gwangju, gangneung]
+                      endStation:
+                        type: string
+                        enum: [seoul, busan, dongdaegu, gwangju, gangneung]
+      responses:
+        '201':
+          description: Routes added successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  routes:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Route'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '404':
+          $ref: '#/components/responses/NotFound'
+
+components:
+  schemas:
+    PassportResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        travelerName:
+          type: string
+        country:
+          type: string
+        photoUrl:
+          type: string
+        travelDate:
+          type: string
+          format: date
+        createdAt:
+          type: string
+          format: date-time
+
+    PassportWithRoutes:
+      allOf:
+        - $ref: '#/components/schemas/PassportResponse'
+        - type: object
+          properties:
+            routes:
+              type: array
+              items:
+                $ref: '#/components/schemas/Route'
+            totalDistance:
+              type: integer
+            totalCo2Saved:
+              type: number
+
+    Route:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        startStation:
+          $ref: '#/components/schemas/Station'
+        endStation:
+          $ref: '#/components/schemas/Station'
+        distance:
+          type: integer
+        co2Train:
+          type: number
+        co2Car:
+          type: number
+        co2Bus:
+          type: number
+        co2Airplane:
+          type: number
+        co2Saved:
+          type: number
+        sequenceOrder:
+          type: integer
+
+    Station:
+      type: object
+      properties:
+        code:
+          type: string
+        nameKo:
+          type: string
+        nameEn:
+          type: string
+        latitude:
+          type: number
+        longitude:
+          type: number
+
+    Error:
+      type: object
+      properties:
+        error:
+          type: string
+        message:
+          type: string
+        statusCode:
+          type: integer
+
+  responses:
+    BadRequest:
+      description: Invalid request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    NotFound:
+      description: Resource not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'

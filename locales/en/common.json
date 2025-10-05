@@ -1,0 +1,153 @@
+{
+  "app": {
+    "title": "Carbon Passport",
+    "description": "Eco-friendly travel with KORAIL",
+    "copyright": "© 2024 KORAIL"
+  },
+  "navigation": {
+    "home": "Home",
+    "create": "Create Passport",
+    "about": "About",
+    "language": "Language"
+  },
+  "passport": {
+    "title": "Carbon Passport",
+    "subtitle": "Save the Earth with train travel",
+    "create": "Create Passport",
+    "share": "Share",
+    "download": "Download",
+    "travelerName": "Traveler Name",
+    "country": "Country",
+    "travelDate": "Travel Date",
+    "photo": "Photo",
+    "uploadPhoto": "Upload Photo",
+    "photoRequired": "Please upload a photo",
+    "routes": "Travel Routes"
+  },
+  "route": {
+    "add": "Add Route",
+    "remove": "Remove",
+    "from": "From",
+    "to": "To",
+    "distance": "Distance",
+    "co2Saved": "CO2 Saved",
+    "selectStation": "Select Station",
+    "totalDistance": "Total Distance",
+    "totalCO2Saved": "Total CO2 Saved"
+  },
+  "emissions": {
+    "title": "CO2 Emissions by Transport",
+    "train": "Train",
+    "car": "Car",
+    "bus": "Bus",
+    "airplane": "Airplane",
+    "saved": "Saved",
+    "comparison": "Emissions Comparison",
+    "unit": {
+      "kg": "kg",
+      "g": "g",
+      "km": "km"
+    }
+  },
+  "survey": {
+    "title": "Travel Survey",
+    "subtitle": "Share your feedback for better service",
+    "submit": "Submit",
+    "skip": "Skip",
+    "required": "Required",
+    "optional": "Optional",
+    "completed": "Survey Completed",
+    "questions": {
+      "travelPurpose": {
+        "label": "Travel Purpose",
+        "options": {
+          "leisure": "Leisure/Tourism",
+          "business": "Business",
+          "visiting": "Visiting Family/Friends",
+          "other": "Other"
+        }
+      },
+      "travelFrequency": {
+        "label": "Train Travel Frequency",
+        "options": {
+          "daily": "Daily",
+          "weekly": "Weekly",
+          "monthly": "Monthly",
+          "yearly": "Several times a year",
+          "rarely": "Rarely"
+        }
+      },
+      "environmentalImportance": {
+        "label": "Importance of Environmental Protection (1-5)",
+        "description": "1: Not important, 5: Very important"
+      },
+      "wouldRecommend": {
+        "label": "Would you recommend train travel?",
+        "options": {
+          "yes": "Yes",
+          "no": "No"
+        }
+      },
+      "improvementSuggestions": {
+        "label": "Improvement Suggestions",
+        "placeholder": "Please share your suggestions for service improvement"
+      },
+      "additionalComments": {
+        "label": "Additional Comments",
+        "placeholder": "Please share any additional comments"
+      }
+    }
+  },
+  "share": {
+    "title": "Share Passport",
+    "subtitle": "Share your passport via link",
+    "generateLink": "Generate Link",
+    "copyLink": "Copy Link",
+    "copied": "Copied!",
+    "expiresIn": "Expires in {days} days",
+    "expired": "Expired link",
+    "qrCode": "QR Code"
+  },
+  "countries": {
+    "KR": "South Korea",
+    "US": "United States",
+    "JP": "Japan",
+    "CN": "China"
+  },
+  "validation": {
+    "required": "This field is required",
+    "invalidName": "Please enter a valid name",
+    "invalidCountry": "Please select a country",
+    "invalidDate": "Please enter a valid date",
+    "invalidFile": "Invalid file format",
+    "fileTooLarge": "File size must be less than 5MB",
+    "minRoutes": "Please add at least one route",
+    "sameStation": "From and To stations cannot be the same"
+  },
+  "buttons": {
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "confirm": "Confirm",
+    "back": "Back"
+  },
+  "messages": {
+    "loading": "Loading...",
+    "saving": "Saving...",
+    "success": "Success!",
+    "error": "An error occurred",
+    "tryAgain": "Please try again",
+    "noData": "No data available"
+  },
+  "footer": {
+    "about": "About",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact": "Contact Us"
+  }
+}

@@ -1,0 +1,119 @@
+openapi: 3.0.0
+info:
+  title: Share API
+  version: 1.0.0
+  description: API for generating and managing share links
+
+paths:
+  /api/share:
+    post:
+      summary: Generate share link for passport
+      operationId: generateShareLink
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - passportId
+              properties:
+                passportId:
+                  type: string
+                  format: uuid
+      responses:
+        '201':
+          description: Share link generated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ShareLinkResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '404':
+          description: Passport not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '428':
+          description: Survey must be completed before sharing
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /api/share/{shareHash}/validate:
+    get:
+      summary: Validate share link
+      operationId: validateShareLink
+      parameters:
+        - name: shareHash
+          in: path
+          required: true
+          schema:
+            type: string
+            pattern: '^[a-zA-Z0-9]{12}$'
+      responses:
+        '200':
+          description: Share link is valid
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  valid:
+                    type: boolean
+                  expiresAt:
+                    type: string
+                    format: date-time
+                  passportId:
+                    type: string
+                    format: uuid
+        '404':
+          description: Share link not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '410':
+          description: Share link expired
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+components:
+  schemas:
+    ShareLinkResponse:
+      type: object
+      properties:
+        shareUrl:
+          type: string
+          format: uri
+        shareHash:
+          type: string
+        expiresAt:
+          type: string
+          format: date-time
+        qrCode:
+          type: string
+          description: Base64 encoded QR code image
+
+    Error:
+      type: object
+      properties:
+        error:
+          type: string
+        message:
+          type: string
+        statusCode:
+          type: integer
+
+  responses:
+    BadRequest:
+      description: Invalid request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
