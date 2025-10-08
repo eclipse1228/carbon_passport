@@ -38,9 +38,9 @@ export async function getStation(code: string) {
 
 // Passport queries
 export async function createPassport(passport: any) {
-  const { data, error } = await supabase
+  const { data, error } = await (supabase as any)
     .from('passports')
-    .insert(passport as any)
+    .insert(passport)
     .select()
     .single()
   
@@ -60,7 +60,7 @@ export async function getPassportByShareHash(shareHash: string) {
 }
 
 export async function updatePassportPhoto(passportId: string, photoUrl: string) {
-  const { data, error } = await supabase
+  const { data, error } = await (supabase as any)
     .from('passports')
     .update({ photo_url: photoUrl })
     .eq('id', passportId)
