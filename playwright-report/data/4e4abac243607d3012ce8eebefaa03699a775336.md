@@ -1,0 +1,46 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - main:
+      - generic:
+        - generic:
+          - heading [level=1]: 여권 만들기
+          - generic:
+            - generic:
+              - generic: "1"
+              - generic: "2"
+              - generic: "3"
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: 여행자 이름
+                  - textbox: Test User
+                - generic:
+                  - generic: 국가
+                  - combobox [expanded]:
+                    - generic: 대한민국
+                    - img
+                  - combobox
+                - generic:
+                  - generic: 여행 날짜
+                  - textbox: 2025-10-05
+                - generic:
+                  - generic: 사진
+                  - generic:
+                    - button
+              - button: 다음
+  - alert
+  - listbox [ref=e1]:
+    - option "대한민국" [active] [selected] [ref=e2]:
+      - img [ref=e5]
+      - generic [ref=e7]: 대한민국
+    - option "미국" [ref=e8]:
+      - generic [ref=e10]: 미국
+    - option "일본" [ref=e11]:
+      - generic [ref=e13]: 일본
+    - option "중국" [ref=e14]:
+      - generic [ref=e16]: 중국
+```

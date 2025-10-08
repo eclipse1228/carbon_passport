@@ -1,0 +1,45 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="31.578028999999997">
+<testsuite name="passport-flow.spec.ts" timestamp="2025-10-05T08:53:22.079Z" hostname="chromium" tests="1" failures="1" skipped="0" time="30.574" errors="0">
+<testcase name="KORAIL Carbon Passport - Full User Journey › should complete full passport creation flow" classname="passport-flow.spec.ts" time="30.574">
+<failure message="passport-flow.spec.ts:9:7 should complete full passport creation flow" type="FAILURE">
+<![CDATA[  [chromium] › passport-flow.spec.ts:9:7 › KORAIL Carbon Passport - Full User Journey › should complete full passport creation flow 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.fill: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('textbox', { name: '여행 날짜' })
+
+
+      26 |     await page.getByRole('textbox', { name: '여행자 이름' }).fill('Test User')
+      27 |     await page.getByRole('combobox').first().click()
+    > 28 |     await page.getByRole('textbox', { name: '여행 날짜' }).fill('2024-01-15')
+         |                                                        ^
+      29 |     
+      30 |     // Proceed to step 2
+      31 |     await page.getByRole('button', { name: '다음' }).click()
+        at /Users/byeongsu/Projects/carbon_passport/e2e/passport-flow.spec.ts:28:56
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/passport-flow-KORAIL-Carbo-37cdb-full-passport-creation-flow-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/passport-flow-KORAIL-Carbo-37cdb-full-passport-creation-flow-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/passport-flow-KORAIL-Carbo-37cdb-full-passport-creation-flow-chromium/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|passport-flow-KORAIL-Carbo-37cdb-full-passport-creation-flow-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|passport-flow-KORAIL-Carbo-37cdb-full-passport-creation-flow-chromium/video.webm]]
+
+[[ATTACHMENT|passport-flow-KORAIL-Carbo-37cdb-full-passport-creation-flow-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
