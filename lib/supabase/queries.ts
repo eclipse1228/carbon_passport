@@ -73,13 +73,13 @@ export async function updatePassportPhoto(passportId: string, photoUrl: string) 
 
 export async function generateShareLink(passportId: string) {
   // Generate share hash using Supabase function
-  const { data: hashData, error: hashError } = await supabase
+  const { data: hashData, error: hashError } = await (supabase as any)
     .rpc('generate_share_hash')
   
   if (hashError) throw hashError
   
   // Update passport with share hash
-  const { data, error } = await supabase
+  const { data, error } = await (supabase as any)
     .from('passports')
     .update({ share_hash: hashData })
     .eq('id', passportId)
@@ -91,8 +91,8 @@ export async function generateShareLink(passportId: string) {
 }
 
 // Route queries
-export async function createRoute(route: RouteInsert) {
-  const { data, error } = await supabase
+export async function createRoute(route: any) {
+  const { data, error } = await (supabase as any)
     .from('routes')
     .insert(route)
     .select()
@@ -102,8 +102,8 @@ export async function createRoute(route: RouteInsert) {
   return data
 }
 
-export async function createRoutes(routes: RouteInsert[]) {
-  const { data, error } = await supabase
+export async function createRoutes(routes: any[]) {
+  const { data, error } = await (supabase as any)
     .from('routes')
     .insert(routes)
     .select()
@@ -124,8 +124,8 @@ export async function getRoutesByPassport(passportId: string) {
 }
 
 // Survey queries
-export async function createSurveyResponse(survey: SurveyResponseInsert) {
-  const { data, error } = await supabase
+export async function createSurveyResponse(survey: any) {
+  const { data, error } = await (supabase as any)
     .from('survey_responses')
     .insert(survey)
     .select()
@@ -140,7 +140,7 @@ export async function updateSurveyResponse(
   responses: any, 
   completed: boolean = false
 ) {
-  const { data, error } = await supabase
+  const { data, error } = await (supabase as any)
     .from('survey_responses')
     .update({ 
       responses, 
