@@ -14,12 +14,11 @@ export const localeNames: Record<Locale, string> = {
 
 export default getRequestConfig(async ({ locale }) => {
   // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)) {
-    locale = defaultLocale
-  }
+  const validLocale = (!locale || !locales.includes(locale as any)) ? defaultLocale : locale
 
   return {
-    locale,
-    messages: (await import(`./locales/${locale}/common.json`)).default,
+    locale: validLocale,
+    messages: (await import(`./locales/${validLocale}/common.json`)).default,
+    timeZone: 'Asia/Seoul',
   }
 })
