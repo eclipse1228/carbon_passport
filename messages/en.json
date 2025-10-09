@@ -1,0 +1,228 @@
+{
+  "app": {
+    "title": "KORAIL Eco Passport",
+    "description": "Reduce your carbon footprint through train travel and set new standards for eco-friendly transportation."
+  },
+  "common": {
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "remove": "Remove",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Successfully completed",
+    "share": "Share",
+    "download": "Download"
+  },
+  "home": {
+    "hero": {
+      "title": "KORAIL Eco Passport",
+      "subtitle": "Train Travel for Carbon Neutrality",
+      "description": "Travel by train to protect the environment and discover new values in travel.",
+      "startButton": "Create Passport",
+      "viewButton": "View Passport"
+    },
+    "esg": {
+      "title": "ESG Management and Sustainable Travel",
+      "environmental": {
+        "title": "Environmental",
+        "description": "Significantly reduce carbon emissions through train travel and protect the global environment."
+      },
+      "social": {
+        "title": "Social",
+        "description": "Practice social responsibility through the use of eco-friendly transportation."
+      },
+      "governance": {
+        "title": "Governance",
+        "description": "Design the future with transparent and sustainable transportation policies."
+      }
+    },
+    "stats": {
+      "title": "Eco-friendly Achievements with KORAIL",
+      "co2Saved": "kg CO₂ Saved",
+      "satisfaction": "Customer Satisfaction",
+      "efficiency": "Energy Efficiency Improvement"
+    },
+    "cta": {
+      "title": "Start Now",
+      "description": "Record and share your eco-friendly travel stories.",
+      "button": "Create Eco Passport"
+    }
+  },
+  "passport": {
+    "title": "Eco Passport",
+    "subtitle": "Train Travel for Carbon Neutrality",
+    "create": "Create Passport",
+    "createTitle": "Create Eco Passport",
+    "createPassport": "Create Passport",
+    "viewTitle": "Eco Passport",
+    "ecoPassport": "Eco Passport",
+    "ecoTraveler": "Eco Traveler",
+    "railwayTravel": "Railway Travel",
+    "personalInfo": "Personal Information",
+    "personalInfoDesc": "Enter basic information to be displayed on your passport.",
+    "name": "Name",
+    "namePlaceholder": "Enter your name",
+    "photo": "Photo",
+    "travelRoutes": "Travel Routes",
+    "travelRoutesDesc": "Add routes you've traveled by train.",
+    "travelHistory": "Travel History",
+    "from": "From",
+    "fromPlaceholder": "Departure station",
+    "to": "To",
+    "toPlaceholder": "Arrival station",
+    "date": "Date",
+    "distance": "Distance",
+    "addRoute": "Add Route",
+    "addNewTrip": "Add New Trip",
+    "trips": "Trips",
+    "totalDistance": "Total Distance",
+    "co2Saved": "CO₂ Saved",
+    "kgCO2Saved": "kg CO₂ Saved",
+    "carbonCredits": "Carbon Credits",
+    "statistics": "Statistics",
+    "preview": "Preview",
+    "verified": "Verified",
+    "member": "Member",
+    "environmentalImpact": "Environmental Impact",
+    "achievements": "Achievements",
+    "ecoWarrior": "Eco Warrior",
+    "saved50kg": "Saved over 50kg CO₂",
+    "frequentTraveler": "Frequent Traveler",
+    "completed5Trips": "Completed 5+ trips",
+    "longDistanceChampion": "Long Distance Champion",
+    "traveled1000km": "Traveled over 1000km",
+    "actions": "Actions",
+    "backToHome": "Back to Home",
+    "shareTitle": "Share Eco Passport",
+    "shareText": "{name} saved {co2}kg of CO₂ through train travel!",
+    "linkCopied": "Link copied to clipboard",
+    "lastTrip": "Last Trip",
+    "success": {
+      "title": "Passport Generation Complete",
+      "subtitle": "Your eco-friendly travel passport is ready",
+      "loading": "Loading passport information...",
+      "error": "Passport not found.",
+      "createNew": "Create New Passport",
+      "fetchError": "Failed to fetch passport information.",
+      "ecoPassport": "Eco-Friendly Travel Certificate",
+      "nameLabel": "Name / 이름",
+      "countryLabel": "Country / 국가",
+      "issueDateLabel": "Issue Date / 발급일",
+      "travelRoute": "Travel Routes",
+      "totalCO2Saved": "Total CO₂ Reduction",
+      "co2SavedUnit": "Total CO₂ Saved",
+      "distanceUnit": "Total Distance",
+      "tripCountUnit": "Trip Count",
+      "travelHistory": "Travel History",
+      "co2EmissionsComparison": "CO₂ Emissions by Transportation Mode",
+      "trainEco": "Train ⭐",
+      "trainEcoDescription": "Eco-friendly choice!",
+      "car": "Car",
+      "bus": "Bus",
+      "airplane": "Airplane",
+      "greenCertified": "Eco-Friendly Travel Certification",
+      "certificationDescription1": "This passport represents eco-friendly travel",
+      "certificationDescription2": "using Korean railways.",
+      "qrCode": "QR Code",
+      "barcode": "Barcode",
+      "share": "Share",
+      "downloadPDF": "Download PDF",
+      "backToHome": "Back to Home",
+      "moreEcoTravel": "Join us for more eco-friendly travels!",
+      "ecoTravelDescription": "Join us in protecting the earth through eco-friendly travel with KORAIL.",
+      "korailESGHistory": "Curious about KORAIL's ESG history?",
+      "shareText": "Saved {co2Saved}kg of CO₂!",
+      "linkCopied": "Link copied to clipboard!",
+      "korailTitle": "KORAIL Carbon Passport",
+      "savingsPercent": "{percent}% saved",
+      "qrCodeModalTitle": "QR Code",
+      "qrCodeDescription": "Scan the QR code to go to the passport page",
+      "barcodeModalTitle": "Barcode",
+      "passportIdLabel": "Passport ID:",
+      "download": "Download",
+      "close": "Close"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "passport": "Carbon Passport",
+    "environment": "Environmental Info",
+    "about": "About",
+    "createPassport": "Create Passport",
+    "viewPassport": "View Existing Passport",
+    "co2Impact": "CO2 Reduction Effect",
+    "environmentalImpact": "Environmental Impact"
+  },
+  "home": {
+    "hero": {
+      "badge": "Leading the Way in Eco-Friendly Transportation",
+      "title": "KORAIL Eco Passport",
+      "description": "Travel by train to protect the environment and discover new values in travel.",
+      "subtitle": "Train Travel for Carbon Neutrality",
+      "createButton": "Create Passport",
+      "lookupButton": "View Passport"
+    },
+    "esg": {
+      "title": "KORAIL ESG Performance",
+      "subtitle": "Achievements made through eco-friendly transportation in 2024",
+      "co2Reduction": {
+        "title": "247K tons",
+        "subtitle": "Annual CO₂ Reduction",
+        "description": "83% reduction vs. cars"
+      },
+      "passengers": {
+        "title": "1.52B",
+        "subtitle": "Annual Passengers",
+        "description": "12% increase from last year"
+      },
+      "distance": {
+        "subtitle": "Total Route Distance",
+        "description": "Nationwide network connection"
+      },
+      "esgGrade": {
+        "subtitle": "ESG Rating",
+        "description": "Highest grade for public enterprises"
+      }
+    },
+    "values": {
+      "title": "The Value of Sustainable Transportation",
+      "subtitle": "The eco-friendly future that KORAIL is creating",
+      "environmental": {
+        "title": "Environmental (E)",
+        "renewableEnergy": "Renewable Energy Usage",
+        "ecoVehicles": "Eco-friendly Vehicle Ratio",
+        "energyEfficiency": "Energy Efficiency Improvement",
+        "description": "Railways emit only 1/9 of the greenhouse gases compared to passenger cars, making them an eco-friendly transportation mode."
+      },
+      "social": {
+        "title": "Social Value (S)",
+        "welfareRecipients": "Transportation Welfare Recipients",
+        "economicContribution": "Regional Economic Contribution",
+        "safetyImprovement": "Safety Improvement",
+        "description": "We provide safe and convenient public transportation services accessible to all citizens."
+      },
+      "governance": {
+        "title": "Transparent Governance (G)",
+        "transparencyIndex": "Management Transparency Index",
+        "digitalInnovation": "Digital Innovation Index",
+        "ethicalManagement": "Ethical Management Implementation Rate",
+        "description": "We pursue sustainable growth through transparent and responsible management."
+      }
+    },
+    "cta": {
+      "title": "Start Now",
+      "description": "Record your eco-friendly travels with the Carbon Passport and join us in creating a sustainable future.",
+      "button": "Start Carbon Passport"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Check out answers to common questions about KORAIL ESG activities"
+  }
+}

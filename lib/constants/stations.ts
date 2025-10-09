@@ -447,6 +447,44 @@ export function getStationByCode(code: string): StationData | undefined {
   return STATIONS.find(station => station.code === code)
 }
 
+export function getStationByName(stationName: string): StationData | undefined {
+  // 정확한 매칭 먼저 시도
+  let station = STATIONS.find(station => 
+    station.name_ko === stationName ||
+    station.name_en === stationName ||
+    station.name_ja === stationName ||
+    station.name_zh === stationName
+  )
+  
+  // 정확한 매칭이 없으면 부분 매칭 시도
+  if (!station) {
+    // 도시 이름으로 찾기 (예: "서울" → "서울역")
+    station = STATIONS.find(station => {
+      const cityName = station.name_ko.replace('역', '').replace('터미널', '')
+      return (
+        cityName === stationName ||
+        station.name_ko.includes(stationName) ||
+        stationName.includes(cityName) ||
+        (station.name_en && station.name_en.toLowerCase().includes(stationName.toLowerCase())) ||
+        (station.name_en && stationName.toLowerCase().includes(station.name_en.toLowerCase().replace(' station', '')))
+      )
+    })
+  }
+  
+  // 여전히 못 찾으면 메인 역 우선 검색 (예: "서울" → "서울역" 우선)
+  if (!station) {
+    const possibleStations = STATIONS.filter(station => {
+      const cityName = station.name_ko.replace('역', '').replace('터미널', '')
+      return cityName === stationName || station.name_ko.includes(stationName)
+    })
+    
+    // 메인 역(코드가 대문자이거나 "역"으로 끝나는 것) 우선
+    station = possibleStations.find(s => s.code === s.code.toUpperCase() && s.name_ko.endsWith('역')) || possibleStations[0]
+  }
+  
+  return station
+}
+
 export function getStationsByRegion(region: string): StationData[] {
   return STATIONS.filter(station => station.region === region)
 }
@@ -521,3 +559,13 @@ export const REGION_NAMES = {
 }
 
 export type Region = keyof typeof REGION_NAMES
+
+// Function to get localized station name
+export function getLocalizedStationName(stationCode: string, locale: 'ko' | 'en' | 'ja' | 'zh' = 'ko'): string {
+  const station = getStationByCode(stationCode)
+  if (!station) return stationCode
+  
+  const nameField = `name_${locale}` as keyof StationData
+  const name = station[nameField] as string | null
+  return name || station.name_ko
+}

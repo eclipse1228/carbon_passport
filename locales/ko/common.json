@@ -1,4 +1,68 @@
 {
+  "home": {
+    "title": "탄소 여권",
+    "subtitle": "KORAIL과 함께하는 친환경 여행",
+    "hero": {
+      "badge": "지속가능한 교통의 미래",
+      "title": "탄소 여권",
+      "description": "기차 여행으로 탄소 발자국을 줄이고, 지구를 보호하세요.",
+      "subtitle": "KORAIL과 함께하는 친환경 여행",
+      "createButton": "여권 만들기",
+      "lookupButton": "여권 조회"
+    },
+    "esg": {
+      "title": "KORAIL ESG 성과",
+      "subtitle": "지속가능한 미래를 위한 노력",
+      "co2Reduction": {
+        "title": "1,247톤",
+        "subtitle": "월 탄소 절감량",
+        "description": "기차 이용으로 절감된 CO2 배출량"
+      },
+      "passengers": {
+        "title": "2.1만명",
+        "subtitle": "월 친환경 이용객",
+        "description": "환경을 생각하는 승객 수"
+      },
+      "distance": {
+        "subtitle": "총 운행거리",
+        "description": "친환경 교통수단으로 운행한 거리"
+      },
+      "esgGrade": {
+        "subtitle": "ESG 등급",
+        "description": "지속가능성 평가 등급"
+      }
+    },
+    "values": {
+      "title": "ESG 가치 창출",
+      "subtitle": "환경, 사회, 지배구조 전 분야에서의 혁신",
+      "environmental": {
+        "title": "환경 (Environmental)",
+        "renewableEnergy": "신재생에너지 사용률",
+        "ecoVehicles": "친환경 차량 비율",
+        "energyEfficiency": "에너지 효율 개선",
+        "description": "탄소중립 실현을 위한 지속적인 환경 개선 노력"
+      },
+      "social": {
+        "title": "사회 (Social)",
+        "welfareRecipients": "교통복지 수혜자",
+        "economicContribution": "경제적 기여",
+        "safetyImprovement": "안전도 개선",
+        "description": "사회적 가치 창출과 국민 편익 증진"
+      },
+      "governance": {
+        "title": "지배구조 (Governance)",
+        "transparencyIndex": "투명성 지수",
+        "digitalInnovation": "디지털 혁신 지수",
+        "ethicalManagement": "윤리경영 실천율",
+        "description": "투명하고 윤리적인 경영으로 신뢰받는 기업"
+      }
+    },
+    "cta": {
+      "title": "지금 시작하세요",
+      "description": "친환경 기차 여행으로 탄소 발자국을 줄이고 지구를 보호하세요.",
+      "button": "탄소 여권 만들기"
+    }
+  },
   "app": {
     "title": "탄소 여권",
     "description": "KORAIL과 함께하는 친환경 여행",
@@ -6,6 +70,12 @@
   },
   "navigation": {
     "home": "홈",
+    "passport": "탄소 여권",
+    "createPassport": "여권 만들기",
+    "viewPassport": "여권 조회",
+    "environment": "환경 정보",
+    "co2Impact": "CO2 절감 효과",
+    "environmentalImpact": "환경 영향",
     "create": "여권 만들기",
     "about": "소개",
     "language": "언어"
@@ -22,7 +92,33 @@
     "photo": "사진",
     "uploadPhoto": "사진 업로드",
     "photoRequired": "사진을 업로드해주세요",
-    "routes": "여행 경로"
+    "routes": "여행 경로",
+    "createPassport": {
+      "title": "카본 여권 만들기",
+      "subtitle": "기차 여행으로 환경을 지키는 여행을 기록하세요",
+      "profilePhoto": "프로필 사진",
+      "uploadPhoto": "사진 업로드",
+      "changePhoto": "사진 변경",
+      "name": "이름",
+      "namePlaceholder": "이름을 입력하세요",
+      "travelDate": "여행 날짜",
+      "travelRoutes": "여행 경로",
+      "addRoute": "경로 추가",
+      "route": "경로",
+      "departure": "출발역",
+      "departurePlaceholder": "출발역을 선택하세요",
+      "destination": "도착역",
+      "destinationPlaceholder": "도착역을 선택하세요",
+      "createButton": "여권 만들기",
+      "creating": "생성 중...",
+      "validation": {
+        "photoRequired": "사진을 업로드해주세요.",
+        "nameRequired": "이름을 입력해주세요.",
+        "routeRequired": "최소 1개 이상의 여행 경로를 추가해주세요.",
+        "unknownError": "알 수 없는 오류가 발생했습니다.",
+        "creationError": "여권 생성에 실패했습니다."
+      }
+    }
   },
   "route": {
     "add": "경로 추가",

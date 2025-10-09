@@ -1,25 +1,23 @@
+import { notFound } from 'next/navigation'
 import { getRequestConfig } from 'next-intl/server'
 
-export const locales = ['ko', 'en', 'ja', 'zh'] as const
-export type Locale = (typeof locales)[number]
-
-export const defaultLocale: Locale = 'ko'
-
-export const localeNames: Record<Locale, string> = {
-  ko: '한국어',
-  en: 'English',
-  ja: '日本語',
-  zh: '中文',
-}
+// Can be imported from a shared config
+const locales = ['ko', 'en', 'ja', 'zh-CN', 'zh-TW']
 
 export default getRequestConfig(async ({ locale }) => {
+  console.log('Received locale:', locale)
+  
+  // Use default locale if undefined
+  const validLocale = locale || 'ko'
+  
   // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)) {
-    locale = defaultLocale
+  if (!locales.includes(validLocale as any)) {
+    console.log('Invalid locale, using default:', validLocale)
+    // notFound()
   }
 
   return {
-    locale,
-    messages: (await import(`./locales/${locale}/common.json`)).default,
+    locale: validLocale,
+    messages: (await import(`./locales/${validLocale}/common.json`)).default
   }
 })

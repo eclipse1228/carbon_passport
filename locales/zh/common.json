@@ -1,4 +1,16 @@
 {
+  "home": {
+    "title": "碳护照",
+    "subtitle": "与KORAIL一起环保旅行",
+    "hero": {
+      "badge": "可持续交通的未来",
+      "title": "碳护照",
+      "description": "乘火车旅行减少碳足迹，保护我们的地球。",
+      "subtitle": "与KORAIL一起环保旅行",
+      "createButton": "创建护照",
+      "lookupButton": "查看护照"
+    }
+  },
   "app": {
     "title": "碳护照",
     "description": "与KORAIL一起环保旅行",

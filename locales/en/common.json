@@ -1,4 +1,16 @@
 {
+  "home": {
+    "title": "Carbon Passport",
+    "subtitle": "Eco-friendly travel with KORAIL",
+    "hero": {
+      "badge": "The Future of Sustainable Transportation",
+      "title": "Carbon Passport",
+      "description": "Reduce your carbon footprint with train travel and protect our planet.",
+      "subtitle": "Eco-friendly travel with KORAIL",
+      "createButton": "Create Passport",
+      "lookupButton": "View Passport"
+    }
+  },
   "app": {
     "title": "Carbon Passport",
     "description": "Eco-friendly travel with KORAIL",
@@ -6,6 +18,12 @@
   },
   "navigation": {
     "home": "Home",
+    "passport": "Carbon Passport",
+    "createPassport": "Create Passport",
+    "viewPassport": "View Passport",
+    "environment": "Environment",
+    "co2Impact": "CO2 Impact",
+    "environmentalImpact": "Environmental Impact",
     "create": "Create Passport",
     "about": "About",
     "language": "Language"

@@ -1,0 +1,262 @@
+{
+  "app": {
+    "title": "碳护照",
+    "description": "与KORAIL一起环保旅行",
+    "copyright": "© 2024 KORAIL"
+  },
+  "navigation": {
+    "home": "首页",
+    "passport": "碳护照",
+    "createPassport": "创建护照",
+    "viewPassport": "查看护照",
+    "environment": "环境信息",
+    "co2Impact": "CO2减排效果",
+    "environmentalImpact": "环境影响",
+    "create": "创建护照",
+    "about": "关于",
+    "language": "语言"
+  },
+  "home": {
+    "hero": {
+      "badge": "KORAIL ESG 环保交通倡议",
+      "title": "碳护照",
+      "subtitle": "与KORAIL一起的环保旅行",
+      "description": "乘火车旅行，建设可持续未来",
+      "createButton": "创建碳护照",
+      "lookupButton": "查询护照"
+    },
+    "esg": {
+      "title": "KORAIL ESG 成果",
+      "subtitle": "2024年通过环保交通实现的成果",
+      "co2Reduction": {
+        "title": "24.7万吨",
+        "subtitle": "年度CO₂减排量",
+        "description": "相比私家车减少83%"
+      },
+      "passengers": {
+        "title": "15.2亿人",
+        "subtitle": "年度乘客数",
+        "description": "同比增长12%"
+      },
+      "distance": {
+        "subtitle": "总运营距离",
+        "description": "全国网络连接"
+      },
+      "esgGrade": {
+        "subtitle": "ESG评级",
+        "description": "公共企业最高等级"
+      }
+    },
+    "values": {
+      "title": "可持续交通的价值",
+      "subtitle": "KORAIL创造的环保未来",
+      "environmental": {
+        "title": "环境保护 (E)",
+        "renewableEnergy": "可再生能源使用率",
+        "ecoVehicles": "环保车辆比例",
+        "energyEfficiency": "能源效率改善",
+        "description": "铁路是相比私家车仅产生1/9温室气体的环保交通工具。"
+      },
+      "social": {
+        "title": "社会价值 (S)",
+        "welfareRecipients": "交通福利受益者",
+        "economicContribution": "地区经济贡献度",
+        "safetyImprovement": "安全度提升",
+        "description": "为所有国民提供安全便利的公共交通服务。"
+      },
+      "governance": {
+        "title": "透明经营 (G)",
+        "transparencyIndex": "经营透明度指数",
+        "digitalInnovation": "数字创新指数",
+        "ethicalManagement": "伦理经营实践率",
+        "description": "通过透明负责的经营追求可持续发展。"
+      }
+    },
+    "cta": {
+      "title": "立即开始",
+      "description": "用碳护照记录您的环保旅行，加入可持续的未来。",
+      "button": "开始碳护照"
+    }
+  },
+  "esg": {
+    "statsTitle": "KORAIL ESG 成果",
+    "statsSubtitle": "2024年通过环保交通实现的成果",
+    "carbonReduction": "年度CO₂减排量",
+    "carbonReductionUnit": "24.7万吨",
+    "carbonReductionDesc": "相比私家车减少83%",
+    "passengers": "年度乘客数",
+    "passengersUnit": "15.2亿人",
+    "passengersDesc": "同比增长12%",
+    "routeDistance": "总运营距离",
+    "routeDistanceDesc": "全国网络连接",
+    "esgRating": "ESG评级",
+    "esgRatingDesc": "公共企业最高等级",
+    "valuesTitle": "可持续交通的价值",
+    "valuesSubtitle": "KORAIL创造的环保未来",
+    "environmental": "环境保护 (E)",
+    "renewableEnergy": "可再生能源使用率",
+    "ecoVehicles": "环保车辆比例",
+    "energyEfficiency": "能源效率改善",
+    "environmentalDesc": "铁路是相比私家车仅产生1/9温室气体的环保交通工具。",
+    "social": "社会价值 (S)",
+    "transportWelfare": "交通福利受益者",
+    "economicContribution": "地区经济贡献度",
+    "safetyImprovement": "安全度提升",
+    "socialDesc": "为所有国民提供安全便利的公共交通服务。",
+    "governance": "透明经营 (G)",
+    "transparency": "经营透明度指数",
+    "digitalInnovation": "数字创新指数",
+    "ethicalManagement": "伦理经营实践率",
+    "governanceDesc": "通过透明负责的经营追求可持续发展。"
+  },
+  "faq": {
+    "title": "常见问题",
+    "subtitle": "了解KORAIL ESG活动的相关问题",
+    "moreInfo": "在可持续经营报告中查看更多详细信息"
+  },
+  "cta": {
+    "title": "立即开始",
+    "description": "用碳护照记录您的环保旅行，\n加入可持续的未来。",
+    "startButton": "开始碳护照"
+  },
+  "passport": {
+    "title": "碳护照",
+    "subtitle": "乘火车旅行，保护地球",
+    "create": "创建护照",
+    "share": "分享",
+    "download": "下载",
+    "travelerName": "旅客姓名",
+    "country": "国家",
+    "travelDate": "旅行日期",
+    "photo": "照片",
+    "uploadPhoto": "上传照片",
+    "photoRequired": "请上传照片",
+    "routes": "旅行路线"
+  },
+  "route": {
+    "add": "添加路线",
+    "remove": "删除",
+    "from": "出发站",
+    "to": "到达站",
+    "distance": "距离",
+    "co2Saved": "节省CO2",
+    "selectStation": "选择车站",
+    "totalDistance": "总距离",
+    "totalCO2Saved": "总CO2节省量"
+  },
+  "emissions": {
+    "title": "各种交通工具CO2排放量",
+    "train": "火车",
+    "car": "汽车",
+    "bus": "公交车",
+    "airplane": "飞机",
+    "saved": "节省量",
+    "comparison": "排放量比较",
+    "unit": {
+      "kg": "千克",
+      "g": "克",
+      "km": "公里"
+    }
+  },
+  "survey": {
+    "title": "旅行调查",
+    "subtitle": "分享您的反馈以获得更好的服务",
+    "submit": "提交",
+    "skip": "跳过",
+    "required": "必填",
+    "optional": "选填",
+    "completed": "调查完成",
+    "questions": {
+      "travelPurpose": {
+        "label": "旅行目的",
+        "options": {
+          "leisure": "休闲/旅游",
+          "business": "商务",
+          "visiting": "探亲访友",
+          "other": "其他"
+        }
+      },
+      "travelFrequency": {
+        "label": "火车旅行频率",
+        "options": {
+          "daily": "每天",
+          "weekly": "每周",
+          "monthly": "每月",
+          "yearly": "每年几次",
+          "rarely": "很少"
+        }
+      },
+      "environmentalImportance": {
+        "label": "环境保护的重要性 (1-5)",
+        "description": "1: 不重要, 5: 非常重要"
+      },
+      "wouldRecommend": {
+        "label": "您会推荐火车旅行吗？",
+        "options": {
+          "yes": "是",
+          "no": "否"
+        }
+      },
+      "improvementSuggestions": {
+        "label": "改进建议",
+        "placeholder": "请分享您对服务改进的建议"
+      },
+      "additionalComments": {
+        "label": "其他意见",
+        "placeholder": "请分享任何其他意见"
+      }
+    }
+  },
+  "share": {
+    "title": "分享护照",
+    "subtitle": "通过链接分享您的护照",
+    "generateLink": "生成链接",
+    "copyLink": "复制链接",
+    "copied": "已复制！",
+    "expiresIn": "{days}天后过期",
+    "expired": "链接已过期",
+    "qrCode": "二维码"
+  },
+  "countries": {
+    "KR": "韩国",
+    "US": "美国",
+    "JP": "日本",
+    "CN": "中国"
+  },
+  "validation": {
+    "required": "此字段为必填项",
+    "invalidName": "请输入有效的姓名",
+    "invalidCountry": "请选择国家",
+    "invalidDate": "请输入有效的日期",
+    "invalidFile": "无效的文件格式",
+    "fileTooLarge": "文件大小必须小于5MB",
+    "minRoutes": "请至少添加一条路线",
+    "sameStation": "出发站和到达站不能相同"
+  },
+  "buttons": {
+    "next": "下一步",
+    "previous": "上一步",
+    "submit": "提交",
+    "cancel": "取消",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "close": "关闭",
+    "confirm": "确认",
+    "back": "返回"
+  },
+  "messages": {
+    "loading": "加载中...",
+    "saving": "保存中...",
+    "success": "成功！",
+    "error": "发生错误",
+    "tryAgain": "请重试",
+    "noData": "暂无数据"
+  },
+  "footer": {
+    "about": "关于",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "contact": "联系我们"
+  }
+}

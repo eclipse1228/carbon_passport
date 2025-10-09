@@ -1,0 +1,228 @@
+{
+  "app": {
+    "title": "코레일 친환경 여권",
+    "description": "기차 여행으로 탄소 발자국을 줄이고 친환경 여행의 새로운 기준을 만들어보세요."
+  },
+  "common": {
+    "back": "뒤로",
+    "next": "다음",
+    "submit": "제출",
+    "cancel": "취소",
+    "save": "저장",
+    "delete": "삭제",
+    "edit": "편집",
+    "add": "추가",
+    "remove": "제거",
+    "loading": "로딩 중...",
+    "error": "오류가 발생했습니다",
+    "success": "성공적으로 완료되었습니다",
+    "share": "공유",
+    "download": "다운로드"
+  },
+  "home": {
+    "hero": {
+      "title": "코레일 친환경 여권",
+      "subtitle": "탄소 중립을 위한 기차 여행",
+      "description": "기차로 여행하며 환경을 보호하고, 여행의 새로운 가치를 발견하세요.",
+      "startButton": "여권 만들기",
+      "viewButton": "여권 보기"
+    },
+    "esg": {
+      "title": "ESG 경영과 지속가능한 여행",
+      "environmental": {
+        "title": "환경 (Environmental)",
+        "description": "기차 여행으로 탄소 배출량을 대폭 줄이고 지구 환경을 보호합니다."
+      },
+      "social": {
+        "title": "사회 (Social)",
+        "description": "친환경 교통수단 이용을 통해 사회적 책임을 실천합니다."
+      },
+      "governance": {
+        "title": "지배구조 (Governance)",
+        "description": "투명하고 지속가능한 교통 정책으로 미래를 설계합니다."
+      }
+    },
+    "stats": {
+      "title": "코레일과 함께하는 친환경 성과",
+      "co2Saved": "kg CO₂ 절약",
+      "satisfaction": "고객 만족도",
+      "efficiency": "에너지 효율성 개선"
+    },
+    "cta": {
+      "title": "지금 시작하세요",
+      "description": "여러분의 친환경 여행 이야기를 기록하고 공유해보세요.",
+      "button": "친환경 여권 만들기"
+    }
+  },
+  "passport": {
+    "title": "친환경 여권",
+    "subtitle": "탄소 중립을 위한 기차 여행",
+    "create": "여권 만들기",
+    "createTitle": "친환경 여권 만들기",
+    "createPassport": "여권 만들기",
+    "viewTitle": "친환경 여권",
+    "ecoPassport": "친환경 여권",
+    "ecoTraveler": "친환경 여행자",
+    "railwayTravel": "철도 여행",
+    "personalInfo": "개인 정보",
+    "personalInfoDesc": "여권에 표시될 기본 정보를 입력하세요.",
+    "name": "이름",
+    "namePlaceholder": "이름을 입력하세요",
+    "photo": "사진",
+    "travelRoutes": "여행 경로",
+    "travelRoutesDesc": "기차로 여행한 경로를 추가하세요.",
+    "travelHistory": "여행 기록",
+    "from": "출발지",
+    "fromPlaceholder": "출발 역",
+    "to": "도착지",
+    "toPlaceholder": "도착 역",
+    "date": "날짜",
+    "distance": "거리",
+    "addRoute": "경로 추가",
+    "addNewTrip": "새 여행 추가",
+    "trips": "여행 횟수",
+    "totalDistance": "총 이동 거리",
+    "co2Saved": "절약한 CO₂",
+    "kgCO2Saved": "kg CO₂ 절약",
+    "carbonCredits": "탄소 크레딧",
+    "statistics": "통계",
+    "preview": "미리보기",
+    "verified": "인증됨",
+    "member": "회원",
+    "environmentalImpact": "환경 영향",
+    "achievements": "성취",
+    "ecoWarrior": "친환경 전사",
+    "saved50kg": "50kg 이상 CO₂ 절약",
+    "frequentTraveler": "단골 여행자",
+    "completed5Trips": "5회 이상 여행 완료",
+    "longDistanceChampion": "장거리 챔피언",
+    "traveled1000km": "1000km 이상 여행",
+    "actions": "액션",
+    "backToHome": "홈으로 돌아가기",
+    "shareTitle": "친환경 여권 공유",
+    "shareText": "{name}님이 기차 여행으로 {co2}kg의 CO₂를 절약했습니다!",
+    "linkCopied": "링크가 클립보드에 복사되었습니다",
+    "lastTrip": "마지막 여행",
+    "success": {
+      "title": "여권 생성 완료",
+      "subtitle": "친환경 여행 여권이 준비되었습니다",
+      "loading": "여권 정보를 불러오는 중...",
+      "error": "여권을 찾을 수 없습니다.",
+      "createNew": "새 여권 만들기",
+      "fetchError": "여권 정보를 가져오는데 실패했습니다.",
+      "ecoPassport": "친환경 여행 인증서",
+      "nameLabel": "이름 / Name",
+      "countryLabel": "국가 / Country",
+      "issueDateLabel": "발급일 / Issue Date",
+      "travelRoute": "여행 경로",
+      "totalCO2Saved": "총 탄소 절감량",
+      "co2SavedUnit": "총 탄소 절감량",
+      "distanceUnit": "총 거리",
+      "tripCountUnit": "여행 횟수",
+      "travelHistory": "여행 기록",
+      "co2EmissionsComparison": "이동수단 별 탄소배출량",
+      "trainEco": "기차 ⭐",
+      "trainEcoDescription": "친환경 선택!",
+      "car": "자동차",
+      "bus": "버스",
+      "airplane": "비행기",
+      "greenCertified": "친환경 여행 인증",
+      "certificationDescription1": "이 여권은 대한민국 철도를 이용한",
+      "certificationDescription2": "친환경 여행을 나타냅니다.",
+      "qrCode": "QR 코드",
+      "barcode": "바코드",
+      "share": "공유하기",
+      "downloadPDF": "PDF 다운로드",
+      "backToHome": "홈으로 돌아가기",
+      "moreEcoTravel": "더 많은 친환경 여행을 함께해요!",
+      "ecoTravelDescription": "코레일과 함께하는 친환경 여행으로 지구를 지키는 일에 동참하세요.",
+      "korailESGHistory": "KORAIL의 ESG 역사가 궁금하다면?",
+      "shareText": "{co2Saved}kg의 CO₂를 절약했습니다!",
+      "linkCopied": "링크가 클립보드에 복사되었습니다!",
+      "korailTitle": "코레일 탄소 여권",
+      "savingsPercent": "{percent}% 절약",
+      "qrCodeModalTitle": "QR 코드",
+      "qrCodeDescription": "여권 페이지로 이동하려면 QR 코드를 스캔하세요",
+      "barcodeModalTitle": "바코드",
+      "passportIdLabel": "여권 ID:",
+      "download": "다운로드",
+      "close": "닫기"
+    }
+  },
+  "navigation": {
+    "home": "홈",
+    "passport": "탄소 여권",
+    "environment": "환경 정보",
+    "about": "소개",
+    "createPassport": "여권 만들기",
+    "viewPassport": "기존 여권 보기",
+    "co2Impact": "CO2 절감 효과",
+    "environmentalImpact": "환경 영향"
+  },
+  "home": {
+    "hero": {
+      "badge": "친환경 교통의 선두주자",
+      "title": "코레일 친환경 여권",
+      "description": "기차로 여행하며 환경을 보호하고, 여행의 새로운 가치를 발견하세요.",
+      "subtitle": "탄소 중립을 위한 기차 여행",
+      "createButton": "여권 만들기",
+      "lookupButton": "여권 보기"
+    },
+    "esg": {
+      "title": "코레일 ESG 성과",
+      "subtitle": "2024년 친환경 교통으로 달성한 성과",
+      "co2Reduction": {
+        "title": "24.7만톤",
+        "subtitle": "연간 CO₂ 절감량",
+        "description": "승용차 대비 83% 절감"
+      },
+      "passengers": {
+        "title": "15.2억명",
+        "subtitle": "연간 이용객 수",
+        "description": "전년 대비 12% 증가"
+      },
+      "distance": {
+        "subtitle": "총 운행거리",
+        "description": "전국 네트워크 연결"
+      },
+      "esgGrade": {
+        "subtitle": "ESG 평가등급",
+        "description": "공기업 최고 등급"
+      }
+    },
+    "values": {
+      "title": "지속가능한 교통의 가치",
+      "subtitle": "코레일이 만들어가는 친환경 미래",
+      "environmental": {
+        "title": "환경 보호 (E)",
+        "renewableEnergy": "재생에너지 사용률",
+        "ecoVehicles": "친환경 차량 비율",
+        "energyEfficiency": "에너지 효율 개선",
+        "description": "철도는 승용차 대비 1/9 수준의 온실가스를 배출하는 친환경 교통수단입니다."
+      },
+      "social": {
+        "title": "사회적 가치 (S)",
+        "welfareRecipients": "교통복지 수혜자",
+        "economicContribution": "지역경제 기여도",
+        "safetyImprovement": "안전도 향상",
+        "description": "모든 국민이 이용할 수 있는 안전하고 편리한 대중교통 서비스를 제공합니다."
+      },
+      "governance": {
+        "title": "투명 경영 (G)",
+        "transparencyIndex": "경영 투명성 지수",
+        "digitalInnovation": "디지털 혁신 지수",
+        "ethicalManagement": "윤리경영 실천율",
+        "description": "투명하고 책임감 있는 경영으로 지속가능한 성장을 추구합니다."
+      }
+    },
+    "cta": {
+      "title": "지금 시작하세요",
+      "description": "탄소 여권으로 여러분의 친환경 여행을 기록하고,\n지속가능한 미래에 동참해보세요.",
+      "button": "탄소 여권 시작하기"
+    }
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "subtitle": "코레일 ESG 활동에 대해 궁금한 점들을 확인해보세요"
+  }
+}

@@ -6,6 +6,12 @@
   },
   "navigation": {
     "home": "ホーム",
+    "passport": "カーボンパスポート",
+    "createPassport": "パスポート作成",
+    "viewPassport": "パスポート確認",
+    "environment": "環境情報",
+    "co2Impact": "CO2削減効果",
+    "environmentalImpact": "環境への影響",
     "create": "パスポート作成",
     "about": "概要",
     "language": "言語"
@@ -22,7 +28,33 @@
     "photo": "写真",
     "uploadPhoto": "写真をアップロード",
     "photoRequired": "写真をアップロードしてください",
-    "routes": "旅行ルート"
+    "routes": "旅行ルート",
+    "createPassport": {
+      "title": "カーボンパスポート作成",
+      "subtitle": "鉄道旅行で環境にやさしい旅を記録しましょう",
+      "profilePhoto": "プロフィール写真",
+      "name": "名前",
+      "namePlaceholder": "名前を入力してください",
+      "travelDate": "旅行日",
+      "travelRoutes": "旅行ルート",
+      "addRoute": "ルート追加",
+      "route": "ルート",
+      "departure": "出発地",
+      "destination": "目的地",
+      "departurePlaceholder": "出発駅を選択してください...",
+      "destinationPlaceholder": "到着駅を選択してください...",
+      "uploadPhoto": "写真をアップロード",
+      "changePhoto": "写真変更",
+      "createButton": "カーボンパスポート作成",
+      "creating": "作成中...",
+      "validation": {
+        "photoRequired": "写真をアップロードしてください。",
+        "nameRequired": "名前を入力してください。",
+        "routeRequired": "少なくとも1つの旅行ルートを入力してください。",
+        "unknownError": "不明なエラーが発生しました。",
+        "creationError": "パスポート作成中にエラーが発生しました。ネットワーク接続を確認して再試行してください。"
+      }
+    }
   },
   "route": {
     "add": "ルート追加",
@@ -149,5 +181,184 @@
     "privacy": "プライバシーポリシー",
     "terms": "利用規約",
     "contact": "お問い合わせ"
+  },
+  "home": {
+    "title": "カーボンパスポート",
+    "subtitle": "KORAILと一緒にするエコフレンドリーな旅",
+    "hero": {
+      "badge": "KORAIL ESG 環境にやさしい交通イニシアチブ",
+      "title": "カーボンパスポート",
+      "description": "鉄道旅行で作る持続可能な未来",
+      "subtitle": "KORAILと一緒にするエコフレンドリーな旅",
+      "createButton": "カーボンパスポート作成",
+      "lookupButton": "ESG成果を見る"
+    },
+    "esg": {
+      "title": "KORAIL ESG成果",
+      "subtitle": "2024年環境にやさしい交通で達成した成果",
+      "co2Reduction": {
+        "title": "24.7万トン",
+        "subtitle": "年間CO₂削減量",
+        "description": "乗用車比83%削減"
+      },
+      "passengers": {
+        "title": "15.2億人",
+        "subtitle": "年間利用者数",
+        "description": "前年比12%増加"
+      },
+      "distance": {
+        "title": "3,417km",
+        "subtitle": "総運行距離",
+        "description": "全国ネットワーク接続"
+      },
+      "esgGrade": {
+        "title": "A+",
+        "subtitle": "ESG評価等級",
+        "description": "公企業最高等級"
+      }
+    },
+    "values": {
+      "title": "持続可能な交通の価値",
+      "subtitle": "KORAILが作り上げるエコフレンドリーな未来",
+      "environmental": {
+        "title": "環境保護 (E)",
+        "renewableEnergy": "再生可能エネルギー使用率",
+        "ecoVehicles": "環境にやさしい車両比率",
+        "energyEfficiency": "エネルギー効率改善",
+        "description": "鉄道は乗用車比1/9レベルの温室効果ガスを排出する環境にやさしい交通手段です。"
+      },
+      "social": {
+        "title": "社会的価値 (S)",
+        "welfareRecipients": "交通福祉受益者",
+        "economicContribution": "地域経済貢献度",
+        "safetyImprovement": "安全度向上",
+        "description": "すべての国民が利用できる安全で便利な公共交通サービスを提供します。"
+      },
+      "governance": {
+        "title": "透明経営 (G)",
+        "transparencyIndex": "経営透明性指数",
+        "digitalInnovation": "デジタル革新指数",
+        "ethicalManagement": "倫理経営実践率",
+        "description": "透明で責任感のある経営で持続可能な成長を追求します。"
+      }
+    },
+    "cta": {
+      "title": "今すぐ始めましょう",
+      "description": "カーボンパスポートであなたのエコフレンドリーな旅を記録し、持続可能な未来に参加してみませんか。",
+      "button": "カーボンパスポート開始"
+    }
+  },
+  "faq": {
+    "title": "よくある質問",
+    "subtitle": "KORAIL ESG活動について気になる点をご確認ください",
+    "questions": [
+      {
+        "question": "鉄道は本当に乗用車よりも環境に優しいのですか？",
+        "answer": "はい、その通りです。ソウル〜釜山区間を例にすると、乗用車は約60.2kgCO₂eを排出しますが、ITX-セマウルは約11.4kgCO₂eしか排出しません。これは約**81%少ない温室効果ガス**を排出することで、鉄道が乗用車比1/9レベルの温室効果ガスしか排出しない環境にやさしい交通手段であることを示しています。",
+        "category": "環境"
+      },
+      {
+        "question": "KORAILのカーボンニュートラル計画は何ですか？",
+        "answer": "KORAILは**2050年までにカーボンニュートラル（Net Zero）達成**を目標としています。このために毎年約150万トンのCO₂e排出量を削減する計画を推進しており、環境にやさしい車両導入、再生可能エネルギーの拡大、エネルギー効率の改善など様々な削減活動を実行しています。",
+        "category": "目標"
+      },
+      {
+        "question": "KORAILはどんな環境にやさしい車両に変えていますか？",
+        "answer": "KORAILは**2029年までにディーゼル旅客機関車を全量廃車**し、KTX-イウム、水素電気動車のような環境にやさしい車両に交換する予定です。現在、環境にやさしい車両比率が78.5%に達しており、継続的に電気動車や水素動車など無公害車両の導入を拡大しています。",
+        "category": "技術"
+      },
+      {
+        "question": "KORAILの社会的支援規模はどの程度ですか？",
+        "answer": "KORAILは毎年**障害者、国家有功者、子ども、高齢者の割引・無料**特典で数千億ウォン規模を支援しています。2024年基準約**5,229万人が利用**して交通福祉実現に大きく貢献しており、125万人の交通福祉受益者にサービスを提供しています。",
+        "category": "社会"
+      },
+      {
+        "question": "KORAILはどんな環境保護活動をしていますか？",
+        "answer": "KORAILは様々な資源循環および再生可能エネルギー活動を推進しています。2023年基準**事業場廃棄物4,964トンのうち4,034トンをリサイクル**（81.3%）し、全国駅舎敷地に太陽光発電設備を設置して再生可能エネルギー使用率を34.2%まで引き上げました。これはRE100達成に大きく貢献しています。",
+        "category": "環境"
+      },
+      {
+        "question": "KORAILのESG情報はどこで確認できますか？",
+        "answer": "KORAILは毎年**持続可能経営報告書**を発刊して温室効果ガス、大気質、廃棄物、再生可能エネルギーなど詳細データを国民に透明に公開しています。経営透明性指数95.7点を記録し、公式ホームページとカーボンパスポートプラットフォームを通じてリアルタイムでESG成果を確認できます。",
+        "category": "情報"
+      }
+    ]
+  },
+  "about": {
+    "hero": {
+      "badge": "ソフトウェアでESG革新を",
+      "title": "eCarbon",
+      "subtitle": "持続可能な未来のためのESG革新",
+      "description": "ソフトウェアで環境を考えます"
+    },
+    "company": {
+      "title": "会社紹介",
+      "subtitle": "ソフトウェアでESG革新に貢献する1年目のスタートアップ",
+      "mission": {
+        "title": "私たちのミッション",
+        "description": "ソフトウェアでESG革新に貢献し、企業と個人が持続可能な未来を作り上げることができるよう支援することが私たちの使命です。環境に対する認識を高め、実質的な変化を導き出すデジタルソリューションを提供します。"
+      },
+      "vision": {
+        "title": "私たちのビジョン",
+        "description": "すべての企業がESG経営を簡単で効果的に実践できる世界を作りたいと思います。技術の力で環境保護と持続可能な発展を推進し、より良い地球を次世代に引き継ぎたいと思います。"
+      }
+    },
+    "services": {
+      "title": "私たちのサービス",
+      "subtitle": "ESG診断からカーボンフットプリント測定まで",
+      "website": {
+        "title": "ウェブサイトカーボンフットプリント診断",
+        "description": "ウェブサイトの環境影響を測定し、改善方案を提示",
+        "features": [
+          "リアルタイムカーボンフットプリント測定",
+          "パフォーマンス最適化ガイド提供",
+          "環境にやさしいウェブ開発コンサルティング"
+        ]
+      },
+      "esg": {
+        "title": "企業ESG簡易診断",
+        "description": "体系的なESG評価で企業の持続可能性レベル把握",
+        "features": [
+          "環境、社会、ガバナンス総合評価",
+          "改善項目優先順位提示",
+          "業界ベンチマーキング分析"
+        ]
+      },
+      "reports": {
+        "title": "ESGレポート発行",
+        "description": "専門的で信頼できるESG成果レポート提供",
+        "features": [
+          "国際標準基準遵守",
+          "透明で正確なデータ分析",
+          "ステークホルダー対象コミュニケーション支援"
+        ]
+      }
+    },
+    "stats": {
+      "title": "eCarbon at a Glance",
+      "subtitle": "1年目スタートアップの歩みと成果",
+      "startup": {
+        "title": "1年目",
+        "subtitle": "スタートアップ設立",
+        "description": "革新的なESGソリューションで市場に進出"
+      },
+      "saas": {
+        "title": "SaaS",
+        "subtitle": "クラウドプラットフォーム",
+        "description": "拡張可能なESG診断サービス"
+      },
+      "expertise": {
+        "title": "ESG",
+        "subtitle": "専門分野",
+        "description": "環境、社会、ガバナンス統合ソリューション"
+      }
+    },
+    "cta": {
+      "title": "一緒に持続可能な未来を作っていきましょう",
+      "description": "eCarbonと一緒にESG経営を始め、環境を考えるビジネスを実現してみませんか。",
+      "startButton": "ESG診断を始める",
+      "learnButton": "詳しく知る",
+      "socialMessage": "Follow us on social media"
+    }
   }
 }

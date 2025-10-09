@@ -157,19 +157,38 @@ export async function updateSurveyResponse(
 
 // Storage functions
 export async function uploadPassportPhoto(file: File, passportId: string) {
-  const fileExt = file.name.split('.').pop()
-  const fileName = `${passportId}-${Date.now()}.${fileExt}`
-  const filePath = `${fileName}`
+  const { validateImageFile, generatePhotoFileName, ensureStorageBucket, getPhotoPublicUrl } = await import('@/lib/utils/storage-setup')
   
+  // Validate the image file
+  const validation = validateImageFile(file)
+  if (!validation.isValid) {
+    throw new Error(validation.error)
+  }
+  
+  // Ensure the storage bucket exists
+  const bucketReady = await ensureStorageBucket()
+  if (!bucketReady) {
+    throw new Error('Storage bucket is not available')
+  }
+  
+  // Generate optimized file name
+  const fileName = generatePhotoFileName(passportId, file.name)
+  
+  // Upload to Supabase Storage
   const { error: uploadError } = await supabase.storage
     .from('passport-photos')
-    .upload(filePath, file)
+    .upload(fileName, file, {
+      cacheControl: '3600',
+      upsert: false
+    })
   
-  if (uploadError) throw uploadError
+  if (uploadError) {
+    console.error('Storage upload error:', uploadError)
+    throw new Error(`파일 업로드 실패: ${uploadError.message}`)
+  }
   
-  const { data: { publicUrl } } = supabase.storage
-    .from('passport-photos')
-    .getPublicUrl(filePath)
+  // Get public URL
+  const publicUrl = await getPhotoPublicUrl(fileName)
   
   return publicUrl
 }

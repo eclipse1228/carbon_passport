@@ -1,0 +1,212 @@
+{
+  "app": {
+    "title": "碳護照",
+    "description": "與KORAIL一起環保旅行",
+    "copyright": "© 2024 KORAIL"
+  },
+  "navigation": {
+    "home": "首頁",
+    "passport": "碳護照",
+    "createPassport": "建立護照",
+    "viewPassport": "查看護照",
+    "environment": "環境資訊",
+    "co2Impact": "CO2減排效果",
+    "environmentalImpact": "環境影響",
+    "create": "建立護照",
+    "about": "關於",
+    "language": "語言"
+  },
+  "home": {
+    "title": "碳護照",
+    "subtitle": "與KORAIL一起環保旅行",
+    "hero": {
+      "badge": "永續交通的未來",
+      "title": "碳護照",
+      "description": "乘火車旅行減少碳足跡，保護我們的地球。",
+      "subtitle": "與KORAIL一起環保旅行",
+      "createButton": "建立護照",
+      "lookupButton": "查看護照"
+    }
+  },
+  "esg": {
+    "statsTitle": "KORAIL ESG 成果",
+    "statsSubtitle": "2024年透過環保交通實現的成果",
+    "carbonReduction": "年度CO₂減排量",
+    "carbonReductionUnit": "24.7萬噸",
+    "carbonReductionDesc": "相比私家車減少83%",
+    "passengers": "年度乘客數",
+    "passengersUnit": "15.2億人",
+    "passengersDesc": "同比增長12%",
+    "routeDistance": "總營運距離",
+    "routeDistanceDesc": "全國網路連接",
+    "esgRating": "ESG評級",
+    "esgRatingDesc": "公共企業最高等級",
+    "valuesTitle": "可持續交通的價值",
+    "valuesSubtitle": "KORAIL創造的環保未來",
+    "environmental": "環境保護 (E)",
+    "renewableEnergy": "再生能源使用率",
+    "ecoVehicles": "環保車輛比例",
+    "energyEfficiency": "能源效率改善",
+    "environmentalDesc": "鐵路是相比私家車僅產生1/9溫室氣體的環保交通工具。",
+    "social": "社會價值 (S)",
+    "transportWelfare": "交通福利受益者",
+    "economicContribution": "地區經濟貢獻度",
+    "safetyImprovement": "安全度提升",
+    "socialDesc": "為所有國民提供安全便利的公共交通服務。",
+    "governance": "透明經營 (G)",
+    "transparency": "經營透明度指數",
+    "digitalInnovation": "數位創新指數",
+    "ethicalManagement": "倫理經營實踐率",
+    "governanceDesc": "透過透明負責的經營追求可持續發展。"
+  },
+  "faq": {
+    "title": "常見問題",
+    "subtitle": "了解KORAIL ESG活動的相關問題",
+    "moreInfo": "在可持續經營報告中查看更多詳細資訊"
+  },
+  "cta": {
+    "title": "立即開始",
+    "description": "用碳護照記錄您的環保旅行，\n加入可持續的未來。",
+    "startButton": "開始碳護照"
+  },
+  "passport": {
+    "title": "碳護照",
+    "subtitle": "乘火車旅行，保護地球",
+    "create": "建立護照",
+    "share": "分享",
+    "download": "下載",
+    "travelerName": "旅客姓名",
+    "country": "國家",
+    "travelDate": "旅行日期",
+    "photo": "照片",
+    "uploadPhoto": "上傳照片",
+    "photoRequired": "請上傳照片",
+    "routes": "旅行路線"
+  },
+  "route": {
+    "add": "新增路線",
+    "remove": "刪除",
+    "from": "出發站",
+    "to": "到達站",
+    "distance": "距離",
+    "co2Saved": "節省CO2",
+    "selectStation": "選擇車站",
+    "totalDistance": "總距離",
+    "totalCO2Saved": "總CO2節省量"
+  },
+  "emissions": {
+    "title": "各種交通工具CO2排放量",
+    "train": "火車",
+    "car": "汽車",
+    "bus": "公車",
+    "airplane": "飛機",
+    "saved": "節省量",
+    "comparison": "排放量比較",
+    "unit": {
+      "kg": "公斤",
+      "g": "公克",
+      "km": "公里"
+    }
+  },
+  "survey": {
+    "title": "旅行調查",
+    "subtitle": "分享您的回饋以獲得更好的服務",
+    "submit": "送出",
+    "skip": "跳過",
+    "required": "必填",
+    "optional": "選填",
+    "completed": "調查完成",
+    "questions": {
+      "travelPurpose": {
+        "label": "旅行目的",
+        "options": {
+          "leisure": "休閒/旅遊",
+          "business": "商務",
+          "visiting": "探親訪友",
+          "other": "其他"
+        }
+      },
+      "travelFrequency": {
+        "label": "火車旅行頻率",
+        "options": {
+          "daily": "每天",
+          "weekly": "每週",
+          "monthly": "每月",
+          "yearly": "每年幾次",
+          "rarely": "很少"
+        }
+      },
+      "environmentalImportance": {
+        "label": "環境保護的重要性 (1-5)",
+        "description": "1: 不重要, 5: 非常重要"
+      },
+      "wouldRecommend": {
+        "label": "您會推薦火車旅行嗎？",
+        "options": {
+          "yes": "是",
+          "no": "否"
+        }
+      },
+      "improvementSuggestions": {
+        "label": "改進建議",
+        "placeholder": "請分享您對服務改進的建議"
+      },
+      "additionalComments": {
+        "label": "其他意見",
+        "placeholder": "請分享任何其他意見"
+      }
+    }
+  },
+  "share": {
+    "title": "分享護照",
+    "subtitle": "透過連結分享您的護照",
+    "generateLink": "產生連結",
+    "copyLink": "複製連結",
+    "copied": "已複製！",
+    "expiresIn": "{days}天後過期",
+    "expired": "連結已過期",
+    "qrCode": "QR碼"
+  },
+  "countries": {
+    "KR": "韓國",
+    "US": "美國",
+    "JP": "日本",
+    "CN": "中國"
+  },
+  "validation": {
+    "required": "此欄位為必填項",
+    "invalidName": "請輸入有效的姓名",
+    "invalidCountry": "請選擇國家",
+    "invalidDate": "請輸入有效的日期",
+    "invalidFile": "無效的檔案格式",
+    "fileTooLarge": "檔案大小必須小於5MB",
+    "minRoutes": "請至少新增一條路線",
+    "sameStation": "出發站和到達站不能相同"
+  },
+  "buttons": {
+    "next": "下一步",
+    "previous": "上一步",
+    "submit": "送出",
+    "cancel": "取消",
+    "save": "儲存",
+    "delete": "刪除",
+    "edit": "編輯",
+    "close": "關閉",
+    "confirm": "確認",
+    "back": "返回"
+  },
+  "messages": {
+    "loading": "載入中...",
+    "saving": "儲存中...",
+    "success": "成功！",
+    "error": "發生錯誤",
+    "tryAgain": "請重試",
+    "noData": "暫無資料"
+  },
+  "footer": {
+    "about": "關於",
+    "privacy": "隱私政策",
+    "terms": "服務條款",
+    "contact": "聯絡我們"
+  }
+}

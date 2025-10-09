@@ -122,6 +122,13 @@ export function formatCO2(co2Kg: number): string {
 }
 
 /**
+ * Alias for formatCO2 function
+ * @param co2Kg CO2 in kilograms
+ * @returns Formatted string with unit
+ */
+export const formatCO2Value = formatCO2
+
+/**
  * Get emission level category based on CO2 amount
  * @param co2Kg CO2 in kilograms
  * @returns Emission level category
